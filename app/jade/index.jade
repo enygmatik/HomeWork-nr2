@@ -1,0 +1,31 @@
+extends _layout/_layout
+
+block title
+     | LoftShop
+
+block content
+    //place every page content here
+    .page
+        .container
+            aside.page__sideBar
+                a(href='#').class.logo
+                    img(src='' alt='').logo__img
+                    p.logo__text Logo
+                .contactForm
+                    .contactForm__container
+                        .contactForm__title Call Back
+                        .contactForm__form
+                            form(name='name' action='' method='POST')
+                                label.contactForm__row.contactForm__row-title Name
+                                    input(type='text' required placeholder='Name').contactForm__row-input
+                                label.contactForm__row.contactForm__row-title Phone
+                                    input(type='number' required placeholder='Phone').contactForm__row-input
+                                div.contactForm__row
+                                    span.contactForm__row-title Date of Call
+
+
+
+
+
+
+

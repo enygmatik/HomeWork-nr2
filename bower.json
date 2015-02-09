@@ -1,0 +1,12 @@
+{
+  "name": "HomeWork nr2",
+  "version": "0.1.0",
+  "description": "LoftSchool Hometask",
+  "license": "MIT",
+  "dependencies": {
+    "bxslider": "*"
+  },
+  "authors": [
+    "John Manoil <ionmnl@gmail.com>"
+  ]
+}

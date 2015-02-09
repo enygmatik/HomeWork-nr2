@@ -1,0 +1,17 @@
+//====Fonts=====
+$elektra_light_regular: 'elektra_light_proregular'
+$elektra_light_bold: 'elektra_light_probold'
+$elektra_medium_regular:'elektra_medium_proregular'
+
+//=====MIXINS======
+@mixin clearfix()
+  &:before,
+  &:after
+    content: " " // 1
+    display: table // 2
+
+  &:after
+    clear: both
+
+
+//variable
