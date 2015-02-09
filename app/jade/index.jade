@@ -4,24 +4,55 @@ block title
      | LoftShop
 
 block content
-    //place every page content here
     .page
         .container
-            aside.page__sideBar
-                a(href='#').class.logo
-                    img(src='' alt='').logo__img
-                    p.logo__text Logo
-                .contactForm
-                    .contactForm__container
-                        .contactForm__title Call Back
-                        .contactForm__form
-                            form(name='name' action='' method='POST')
-                                label.contactForm__row.contactForm__row-title Name
-                                    input(type='text' required placeholder='Name').contactForm__row-input
-                                label.contactForm__row.contactForm__row-title Phone
-                                    input(type='number' required placeholder='Phone').contactForm__row-input
-                                div.contactForm__row
-                                    span.contactForm__row-title Date of Call
+            include _includes/_sideBar
+
+            .page__content
+                .slider
+                    ul.slider__list
+                        - for (var i = 0; i < 3; i++)
+                            li.slider__item
+                                img(src="//lorempixel.com/740/300/technics/" + i).slider__img
+                                .slider__description
+                                    .slider__description-inner
+                                        .slider__description-title
+                                            a(href="#") iMac за полцены
+                                        .slider__description-text Принеси свой старый Mac и получи скидку на новый!
+
+                each section in ["Популярные товары", "Товары со скидкой"]
+                    .products
+                        .page-title
+                            .page-title__text= section
+
+                        ul.products__list
+                            each title, indx in ['Apple Thunderbolt Display', 'iMac 27', 'iPhone 5s Gold']
+                                li.products__item
+                                    a(href="#").products__item-inner
+                                        .products__title
+                                            .products__title-pic
+                                                img(src="//lorempixel.com/90/90/technics/" + indx)
+                                            .products__title-text--wrap
+                                                .product__title-text= title
+                                        .products__options
+                                            ul.products__options-list
+                                                li.products__options-item
+                                                    .products__options-key Article
+                                                    .products__option-value 212222
+                                                li.products__options-item
+                                                    .products__options-key Option
+                                                    .products__option-value Include
+                                                li.products__options-item
+                                                    .products__options-key Color
+                                                    .products__option-value Silver
+                                                li.products__options-item
+                                                    .products__options-key Size
+                                                    .products__option-value 1280*1245*90
+                                                li.products__options-item
+                                                    .products__options-key Mass
+                                                    .products__option-value 6kg
+
+
 
 
 

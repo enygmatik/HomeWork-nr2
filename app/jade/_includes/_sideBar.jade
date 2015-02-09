@@ -1,1 +1,38 @@
-
+aside.page__sideBar
+    a(href='#').class.logo
+        img(src='' alt='').logo__img
+        p.logo__text Logo
+    .contactForm
+        .contactForm__container
+            .contactForm__title Call Back
+            .contactForm__form
+                form(name='name' action='' method='POST')
+                    label.contactForm__row
+                        .contactForm__row-title Name
+                        input(type='text' required placeholder='Name').contactForm__row-input
+                    label.contactForm__row
+                        .contactForm__row-title Phone
+                        input(type='number' required placeholder='Phone').contactForm__row-input
+                    div.contactForm__row
+                        span.contactForm__row-title Date of Call
+                        span.contactForm__row-wrap
+                            select.contactForm__row-select
+                                - for (var i = 1; i<= 24; i++)
+                                    option(value=i)= i
+                            select.contactForm__row-select
+                                - for (var i = 1; i <= 60; i++)
+                                    option(value=i)= i
+                    textarea(placeholder='your message').contactForm__textarea
+                    .contactForm__button
+                        button(type='submit' name='send').contactForm__button-submit Send
+                        button(type='reset' name='reset').contactForm__button-reset Clear
+    .pictures
+        ul.pictures__list
+            - for (var i = 0; i < 9; i++)
+                li.pictures__item
+                    a(href="#").pictures__link
+                        img(src="//lorempixel.com/70/70/nature/" + i ).pictures__img
+    .contacts
+        .contacts__inner
+            .contacts__address г. Москва, ул. Новая 246, офис 214.
+            a(href="tel.:+79213221232").contacts__phone +7(921) 322-12-32
