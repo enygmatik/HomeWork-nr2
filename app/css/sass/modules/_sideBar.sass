@@ -1,2 +1,124 @@
 //SideBar
 @import "../mixins/_mixins.sass"
+
+.page__sideBar
+  @include clearfix
+  display: inline-block
+  float: left
+  max-width: 230px
+  width: 100%
+//===== CONTACT FORM ====
+.contactForm
+  width: 100%
+  min-height: 315px
+  padding: 0 10px 0 10px
+  background-color: $silver
+
+.contactForm__title
+  font-size: 25px
+  font-family: $elektra_light_bold
+  padding-top: 14px
+  text-align: center
+  margin-bottom: 25px
+  color: $dark-blue
+
+.contactForm__row
+  @include clearfix
+  display: inline-block
+  width: 100%
+  text-align: center
+  margin-bottom: 15px
+
+.contactForm__row-title
+  font-size: 14px
+  height: 25px
+  padding-top: 5px
+  font-family: $elektra_light_regular
+  float: left
+  display: inline-block
+  color: $dark-blue
+
+.contactForm__row-input
+  max-width: 133px
+  min-height: 25px
+  float: right
+  font-size: 12px
+  font-family: $elektra_light_regular
+  padding-left: 10px
+  border: 1px solid $gray
+
+.contactForm__textarea
+  min-height: 70px
+  min-width: 100%
+  resize: none
+  margin-bottom: 10px
+  font-size: 12px
+  font-family: $elektra_light_regular
+  padding: 10px
+  border: 1px solid $gray
+
+
+.contactForm__button
+  @include clearfix
+  display: block
+  width: 100%
+  text-align: center
+  padding-bottom: 15px
+
+.contactForm__button-submit, .contactForm__button-reset
+  min-width: 90px
+  min-height: 35px
+  font-size: 15px
+  font-family: $elektra_light_bold
+  color: #fff
+  outline: none
+
+
+.contactForm__button-submit
+  background-color: $blue
+  float: left
+
+.contactForm__button-reset
+  background-color: $gray
+  float: right
+
+//==== PICTURES ====
+.pictures__list
+  @include clearfix
+  list-style: none
+  margin-left: -10px
+  padding: 0
+
+// TODO: de aranjat 3x3 grid pictures
+.pictures__item
+  float: left
+  margin-left: 10px
+  margin-bottom: 10px
+
+//==== CONTACT ====
+
+.contacts
+  background-color: $silver
+  text-align: center
+  min-height: 105px
+  padding: 15px 20px
+  color: $dark-blue
+  font-size: 14px
+  font-family: $elektra_light_regular
+
+.contacts__address
+  background: url("../img/map_point.png") 0 0  no-repeat
+  padding-left: 20px
+  margin-bottom: 10px
+
+.contacts__phone
+  display: block
+  padding-top: 3px
+  background: url("../img/phone.png") 0 0 no-repeat
+  padding-left: 25px
+  height: 25px
+  text-decoration: none
+
+
+
+

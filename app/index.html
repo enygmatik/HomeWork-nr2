@@ -23,8 +23,8 @@
       <div class="mainContent">
         <div class="page">
           <div class="container">
-            <aside class="page__sideBar"><a href="#" class="class logo"><img src="" alt="" class="logo__img">
-                <p class="logo__text">Logo</p></a>
+            <aside class="page__sideBar"><a href="#" class="logo"><img src="img/logo.png" alt="" class="logo__img">
+                <p class="logo__text">Apple Shop</p></a>
               <div class="contactForm">
                 <div class="contactForm__container">
                   <div class="contactForm__title">Call Back</div>
@@ -36,7 +36,7 @@
                       </label>
                       <label class="contactForm__row">
                         <div class="contactForm__row-title">Phone</div>
-                        <input type="number" required placeholder="Phone" class="contactForm__row-input">
+                        <input type="number" required placeholder="+373 798 680 07" class="contactForm__row-input">
                       </label>
                       <div class="contactForm__row"><span class="contactForm__row-title">Date of Call</span><span class="contactForm__row-wrap">
                           <select class="contactForm__row-select">
@@ -150,9 +150,7 @@
                 </ul>
               </div>
               <div class="contacts">
-                <div class="contacts__inner">
-                  <div class="contacts__address">г. Москва, ул. Новая 246, офис 214.</div><a href="tel.:+79213221232" class="contacts__phone">+7(921) 322-12-32</a>
-                </div>
+                <div class="contacts__address">г. Москва, ул. Новая 246, офис 214.</div><a href="tel:+37379868007" class="contacts__phone">+373(79) 868-007</a>
               </div>
             </aside>
             <div class="page__content">
@@ -389,11 +387,63 @@
         </div>
       </div>
     </div>
-    <footer class="footer"></footer>
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js">')</script><!-- build:js js/core.js -->
-    <!-- bower:js -->
-    <script src="js/main.js"></script><!-- endbower -->
-    <!-- endbuild -->
+    <footer role="contentinfo" class="footer">
+      <div class="container">
+        <div class="footer__logo"><img src="/img/logo/footer_logo.png" class="footer__logo-img">
+          <div class="footer__logo-text">ЭпплShop</div>
+        </div>
+        <div class="footer__options">
+          <ul class="footer__options-list">
+            <li class="footer__options-item">
+              <div class="footer__options-title">О магазине</div>
+              <ul class="footer__menu">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">О нас</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Наши цены</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Наши скидки</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Акции</a></li>
+              </ul>
+            </li>
+            <li class="footer__options-item">
+              <div class="footer__options-title">Каталог</div>
+              <ul class="footer__menu">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Смартфоны</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Планшеты</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Компьютеры</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li class="footer__options-item">
+              <div class="footer__options-title">Контакты</div>
+              <ul class="footer__menu">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Телефоны</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Адреса</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Карта проезда</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Обратная связь</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item"><a href="#" class="footer__socials-link"><img src="/img/icons/appstore.png" class="footer__socials-img"></a></li>
+            <li class="footer__socials-item"><a href="#" class="footer__socials-link"><img src="/img/icons/googleplay.png" class="footer__socials-img"></a></li>
+          </ul>
+          <ul class="footer__socials-icons">
+            <li class="footer__socials-icon footer__socials-icon_vk"><a href="#" class="footer__socials-network"></a></li>
+            <li class="footer__socials-icon footer__socials-icon_fb"><a href="#" class="footer__socials-network"></a></li>
+            <li class="footer__socials-icon footer__socials-icon_tw"><a href="#" class="footer__socials-network"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <!--script(src="//code.jquery.com/jquery-1.11.2.min.js")-->
+    <!--script window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js">')-->
+    <!--build:js js/core.js-->
+    <!--bower:js-->
+    <script src="_bower/bxslider/jquery.bxSlider.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--endbower-->
+    <!--endbuild-->
   </body>
 </html>

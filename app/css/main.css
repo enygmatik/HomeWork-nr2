@@ -23,7 +23,220 @@
   box-sizing: border-box;
   border: 0; }
 
+html, body {
+  min-height: 100%;
+  width: 100%;
+  text-align: center; }
+
+.wrapper, .mainContent {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  text-align: center;
+  padding: 10px 10px 0 10px; }
+
+.page {
+  min-width: 1000px;
+  display: inline-block;
+  text-align: left; }
+
+.container:before, .container:after {
+  content: " ";
+  display: table; }
+.container:after {
+  clear: both; }
+
+.page__content {
+  display: inline-block;
+  max-width: 740px;
+  width: 100%;
+  float: right; }
+
+.logo {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px; }
+
+.logo__img {
+  max-width: 230px;
+  max-height: 60px;
+  width: 100%; }
+
+.logo__text {
+  display: none; }
+
+.slider {
+  position: relative;
+  margin-bottom: 40px; }
+
+.slider__list {
+  list-style: none; }
+
+.slider__item {
+  position: relative; }
+
+.slider__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  background: url("../img/slide_desc_back.png"); }
+
+.slider__description-inner {
+  padding: 14px 24px; }
+
+.slider__description-title {
+  margin-bottom: 5px; }
+  .slider__description-title a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #00b9fe;
+    font-family: "elektra_light_proregular"; }
+
+.slider__description-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  font-family: "elektra_light_proregular"; }
+
+.bx-prev, .bx-next {
+  position: absolute;
+  top: 50%; }
+
+.bx-next {
+  right: 0; }
+
+.bx-prev {
+  left: 0; }
+
+.page__sideBar {
+  display: inline-block;
+  float: left;
+  max-width: 230px;
+  width: 100%; }
+  .page__sideBar:before, .page__sideBar:after {
+    content: " ";
+    display: table; }
+  .page__sideBar:after {
+    clear: both; }
+
+.contactForm {
+  width: 100%;
+  min-height: 315px;
+  padding: 0 10px 0 10px;
+  background-color: #f4f6f9; }
+
+.contactForm__title {
+  font-size: 25px;
+  font-family: "elektra_light_probold";
+  padding-top: 14px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #5c7b98; }
+
 .contactForm__row {
-  display: block; }
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px; }
+  .contactForm__row:before, .contactForm__row:after {
+    content: " ";
+    display: table; }
+  .contactForm__row:after {
+    clear: both; }
+
+.contactForm__row-title {
+  font-size: 14px;
+  height: 25px;
+  padding-top: 5px;
+  font-family: "elektra_light_proregular";
+  float: left;
+  display: inline-block;
+  color: #5c7b98; }
+
+.contactForm__row-input {
+  max-width: 133px;
+  min-height: 25px;
+  float: right;
+  font-size: 12px;
+  font-family: "elektra_light_proregular";
+  padding-left: 10px;
+  border: 1px solid #dae1eb; }
+
+.contactForm__textarea {
+  min-height: 70px;
+  min-width: 100%;
+  resize: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: "elektra_light_proregular";
+  padding: 10px;
+  border: 1px solid #dae1eb; }
+
+.contactForm__button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px; }
+  .contactForm__button:before, .contactForm__button:after {
+    content: " ";
+    display: table; }
+  .contactForm__button:after {
+    clear: both; }
+
+.contactForm__button-submit, .contactForm__button-reset {
+  min-width: 90px;
+  min-height: 35px;
+  font-size: 15px;
+  font-family: "elektra_light_probold";
+  color: #fff;
+  outline: none; }
+
+.contactForm__button-submit {
+  background-color: #00b9fe;
+  float: left; }
+
+.contactForm__button-reset {
+  background-color: #dae1eb;
+  float: right; }
+
+.pictures__list {
+  list-style: none;
+  margin-left: -10px;
+  padding: 0; }
+  .pictures__list:before, .pictures__list:after {
+    content: " ";
+    display: table; }
+  .pictures__list:after {
+    clear: both; }
+
+.pictures__item {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
+.contacts {
+  background-color: #f4f6f9;
+  text-align: center;
+  min-height: 105px;
+  padding: 15px 20px;
+  color: #5c7b98;
+  font-size: 14px;
+  font-family: "elektra_light_proregular"; }
+
+.contacts__address {
+  background: url("../img/map_point.png") 0 0 no-repeat;
+  padding-left: 20px;
+  margin-bottom: 10px; }
+
+.contacts__phone {
+  display: block;
+  padding-top: 3px;
+  background: url("../img/phone.png") 0 0 no-repeat;
+  padding-left: 25px;
+  height: 25px;
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -34,12 +34,15 @@ html
 
         include ../_includes/_footer
 
-        script(src="//code.jquery.com/jquery-1.11.2.min.js")
-        script window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js">')
+        script(src="js/vendor/jquery-1.11.2.min.js")
+        //script(src="//code.jquery.com/jquery-1.11.2.min.js")
+        //script window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js">')
 
-        <!-- build:js js/core.js -->
-        <!-- bower:js -->
+        //build:js js/core.js
+        //bower:js
+        script(src="_bower/bxslider/jquery.bxSlider.min.js")
+
         script(src='js/main.js')
-        <!-- endbower -->
-        <!-- endbuild -->
+        //endbower
+        //endbuild
 

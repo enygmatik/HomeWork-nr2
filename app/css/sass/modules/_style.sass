@@ -8,7 +8,92 @@
   box-sizing: border-box
   border: 0
 
-.contactForm__row
-  display: block
+html, body
+  min-height: 100%
+  width: 100%
+  text-align: center
+
+.wrapper, .mainContent
+  width: 100%
+  min-height: 100%
+  height: auto
+  text-align: center
+  padding: 10px 10px 0 10px
+
+
+.page
+  min-width: 1000px
+  display: inline-block
+  text-align: left
+
+.container
+  @include clearfix
+
+.page__content
+  display: inline-block
+  max-width: 740px
+  width: 100%
+  float: right
+
+.logo
+  display: inline-block
+  width: 100%
+  height: auto
+  margin-bottom: 25px
+
+.logo__img
+  max-width: 230px
+  max-height: 60px
+  width: 100%
+.logo__text
+  display: none
+
+
+// ==== CONTENT ====
+.slider
+  position: relative
+  margin-bottom: 40px
+
+.slider__list
+  list-style: none
+
+.slider__item
+  position: relative
+
+.slider__description
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  height: 75px
+  background: url("../img/slide_desc_back.png")
+
+.slider__description-inner
+  padding: 14px 24px
+
+.slider__description-title
+  margin-bottom: 5px
+  a
+    font-size: 18px
+    line-height: 20px
+    color: $blue
+    font-family: $elektra_light_regular
+
+.slider__description-text
+  font-size: 14px
+  line-height: 16px
+  color: #fff
+  font-family: $elektra_light_regular
+
+.bx-prev, .bx-next
+  position: absolute
+  top: 50%
+
+.bx-next
+  right: 0
+
+.bx-prev
+  left: 0
+
 
 
