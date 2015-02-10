@@ -53,6 +53,12 @@ html, body
 .slider
   position: relative
   margin-bottom: 40px
+  width: 100%
+  display: inline-block
+
+.bx-wrapper, .bx-window
+  width: 100% !important
+  display: block
 
 .slider__list
   list-style: none
@@ -96,4 +102,119 @@ html, body
   left: 0
 
 
+//==== GADGETS SECTION =====
 
+.page-title
+  text-align: center
+  overflow: hidden
+
+.page-title__text
+  display: inline-block
+  font-size: 25px
+  color: $dark-blue
+  position: relative
+  padding: 0 15px
+
+  &:before, &:after
+    content: ""
+    display: block
+    height: 1px
+    top: 50%
+    position: absolute
+    width: 2000px
+    background: $dark-blue
+    margin-top: -1px
+  &:before
+    left: 100%
+
+  &:after
+    right: 100%
+
+
+.products
+  margin-bottom: 33px
+
+.products__list
+  list-style: none
+  @include clearfix
+  margin-left: -35px
+
+.products__item
+  float: left
+  margin-left: 15px
+  width: 228px
+  -webkit-transition: 0.2s
+  -moz-transition: 0.2s
+  -ms-transition: 0.2s
+  -o-transition: 0.2s
+  transition: 0.2s
+  border: 1px solid #dbe2eb
+
+.products__item:hover
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15)
+  -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15)
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15)
+
+.products__item:hover .product__title-text
+  color: #613993
+
+.products__item-inner
+  padding: 20px 14px 5px
+  display: block
+
+.products__title
+  @include clearfix
+  margin-bottom: 16px
+
+.products__title-pic
+  float: left
+  width: 82px
+  height: 90px
+  position: relative
+
+.products__title-pic img
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+
+.products__title-text--wrap
+  float: right
+  width: 115px
+
+.product__title-text
+  display: table-cell
+  vertical-align: middle
+  text-align: center
+  width: 115px
+  height: 90px
+  font-size: 15px
+  line-height: 17px
+  color: $blue
+  -webkit-transition: 0.2s
+  -moz-transition: 0.2s
+  -ms-transition: 0.2s
+  -o-transition: 0.2s
+  transition: 0.2s
+
+.products__options-list
+  list-style: none
+  padding: 20px
+
+.products__options-item
+  @include clearfix
+  margin-bottom: 5px
+
+.products__options-key,
+.products__option-value
+  //width: 90px
+  float: left
+  font-size: 14px
+  line-height: 16px
+  color: #5c7b98
+
+.products__option-value
+  padding-left: 10px
