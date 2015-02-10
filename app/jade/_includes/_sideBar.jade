@@ -1,28 +1,30 @@
 aside.page__sideBar
     a(href='#').logo
-        img(src='img/logo.png' alt='').logo__img
+        img(src='img/logo/logo.png' alt='').logo__img
         p.logo__text Apple Shop
     .contactForm
         .contactForm__container
             .contactForm__title Call Back
             .contactForm__form
                 form(name='name' action='' method='POST')
+                    .contactForm___response
+
                     label.contactForm__row
                         .contactForm__row-title Name
-                        input(type='text' required placeholder='Name').contactForm__row-input
+                        input(type='text' name='name' placeholder='name').contactForm__row-input
                     label.contactForm__row
                         .contactForm__row-title Phone
-                        input(type='number' required placeholder='+373 798 680 07').contactForm__row-input
+                        input(type='text' name='phone' placeholder='+373 798 680 07').contactForm__row-input
                     div.contactForm__row
                         span.contactForm__row-title Date of Call
                         span.contactForm__row-wrap
-                            select.contactForm__row-select
+                            select(name='hour').contactForm__row-select
                                 - for (var i = 1; i<= 24; i++)
                                     option(value=i)= i
-                            select.contactForm__row-select
+                            select(name='minute').contactForm__row-select
                                 - for (var i = 1; i <= 60; i++)
                                     option(value=i)= i
-                    textarea(placeholder='your message').contactForm__textarea
+                    textarea(placeholder='your message' name='message').contactForm__textarea
                     .contactForm__button
                         button(type='submit' name='send').contactForm__button-submit Send
                         button(type='reset' name='reset').contactForm__button-reset Clear

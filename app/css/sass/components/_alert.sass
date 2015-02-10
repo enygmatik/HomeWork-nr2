@@ -1,0 +1,33 @@
+@import "../mixins/mixins"
+
+.has-succes
+  border: 1px solid green
+  background-color: rgba(32, 180, 72, 0.51)
+  color: #f3f3f3
+  &::-webkit-input-placeholder
+    color: #f3f3f3
+
+.has-error
+  border: 1px solid #ff0000
+  background-color: rgba(255, 73, 67, 0.51)
+  color: #f3f3f3
+  &::-webkit-input-placeholder
+    color: #f3f3f3
+
+.contactForm___response
+  text-align: center
+  font-size: 14px
+  margin-bottom: 10px
+
+.error_message, .succes_message
+  padding: 3px
+  text-align: center
+  color: #fff
+  transition: .5s
+
+
+.succes_message
+  background-color: rgba(32, 180, 72, 0.26)
+
+.error_message
+  background-color: rgba(255, 73, 67, 0.26)

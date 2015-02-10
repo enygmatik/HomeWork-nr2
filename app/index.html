@@ -9,9 +9,11 @@
     <title>LoftShop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory--><!-- build:css css/core.css -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <!--build:css css/core.css-->
     <link rel="stylesheet" href="css/base/normalize.css">
-    <link rel="stylesheet" href="css/main.css"><!-- endbuild -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
     <!--if need modernizr-->
     <!--script(src="js/vendor/modernizr-2.6.2.min.js")-->
   </head>
@@ -23,23 +25,24 @@
       <div class="mainContent">
         <div class="page">
           <div class="container">
-            <aside class="page__sideBar"><a href="#" class="logo"><img src="img/logo.png" alt="" class="logo__img">
+            <aside class="page__sideBar"><a href="#" class="logo"><img src="img/logo/logo.png" alt="" class="logo__img">
                 <p class="logo__text">Apple Shop</p></a>
               <div class="contactForm">
                 <div class="contactForm__container">
                   <div class="contactForm__title">Call Back</div>
                   <div class="contactForm__form">
                     <form name="name" action="" method="POST">
+                      <div class="contactForm___response"></div>
                       <label class="contactForm__row">
                         <div class="contactForm__row-title">Name</div>
-                        <input type="text" required placeholder="Name" class="contactForm__row-input">
+                        <input type="text" name="name" placeholder="name" class="contactForm__row-input">
                       </label>
                       <label class="contactForm__row">
                         <div class="contactForm__row-title">Phone</div>
-                        <input type="number" required placeholder="+373 798 680 07" class="contactForm__row-input">
+                        <input type="text" name="phone" placeholder="+373 798 680 07" class="contactForm__row-input">
                       </label>
                       <div class="contactForm__row"><span class="contactForm__row-title">Date of Call</span><span class="contactForm__row-wrap">
-                          <select class="contactForm__row-select">
+                          <select name="hour" class="contactForm__row-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -65,7 +68,7 @@
                             <option value="23">23</option>
                             <option value="24">24</option>
                           </select>
-                          <select class="contactForm__row-select">
+                          <select name="minute" class="contactForm__row-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -127,7 +130,7 @@
                             <option value="59">59</option>
                             <option value="60">60</option>
                           </select></span></div>
-                      <textarea placeholder="your message" class="contactForm__textarea"></textarea>
+                      <textarea placeholder="your message" name="message" class="contactForm__textarea"></textarea>
                       <div class="contactForm__button">
                         <button type="submit" name="send" class="contactForm__button-submit">Send</button>
                         <button type="reset" name="reset" class="contactForm__button-reset">Clear</button>
@@ -156,7 +159,7 @@
             <div class="page__content">
               <div class="slider">
                 <ul class="slider__list">
-                  <li class="slider__item"><img src="//lorempixel.com/740/300/technics/0" class="slider__img">
+                  <li class="slider__item"><img src="//lorempixel.com/740/340/technics/0" class="slider__img">
                     <div class="slider__description">
                       <div class="slider__description-inner">
                         <div class="slider__description-title"><a href="#">iMac за полцены</a></div>
@@ -164,7 +167,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="slider__item"><img src="//lorempixel.com/740/300/technics/1" class="slider__img">
+                  <li class="slider__item"><img src="//lorempixel.com/740/340/technics/1" class="slider__img">
                     <div class="slider__description">
                       <div class="slider__description-inner">
                         <div class="slider__description-title"><a href="#">iMac за полцены</a></div>
@@ -172,7 +175,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="slider__item"><img src="//lorempixel.com/740/300/technics/2" class="slider__img">
+                  <li class="slider__item"><img src="//lorempixel.com/740/340/technics/2" class="slider__img">
                     <div class="slider__description">
                       <div class="slider__description-inner">
                         <div class="slider__description-title"><a href="#">iMac за полцены</a></div>
@@ -189,7 +192,7 @@
                 <ul class="products__list">
                   <li class="products__item"><a href="#" class="products__item-inner">
                       <div class="products__title">
-                        <div class="products__title-pic"><img src="img/test.png0"></div>
+                        <div class="products__title-pic"><img src="//lorempixel.com/82/90/technics/0"></div>
                         <div class="products__title-text--wrap">
                           <div class="product__title-text">Apple Macbook Pro 13 Retina</div>
                         </div>
@@ -220,7 +223,7 @@
                       </div></a></li>
                   <li class="products__item"><a href="#" class="products__item-inner">
                       <div class="products__title">
-                        <div class="products__title-pic"><img src="img/test.png1"></div>
+                        <div class="products__title-pic"><img src="//lorempixel.com/82/90/technics/1"></div>
                         <div class="products__title-text--wrap">
                           <div class="product__title-text">iMac 27 5K</div>
                         </div>
@@ -251,7 +254,7 @@
                       </div></a></li>
                   <li class="products__item"><a href="#" class="products__item-inner">
                       <div class="products__title">
-                        <div class="products__title-pic"><img src="img/test.png2"></div>
+                        <div class="products__title-pic"><img src="//lorempixel.com/82/90/technics/2"></div>
                         <div class="products__title-text--wrap">
                           <div class="product__title-text">iPhone 6 </div>
                         </div>
@@ -289,7 +292,7 @@
                 <ul class="products__list">
                   <li class="products__item"><a href="#" class="products__item-inner">
                       <div class="products__title">
-                        <div class="products__title-pic"><img src="img/test.png0"></div>
+                        <div class="products__title-pic"><img src="//lorempixel.com/82/90/technics/0"></div>
                         <div class="products__title-text--wrap">
                           <div class="product__title-text">Apple Macbook Pro 13 Retina</div>
                         </div>
@@ -320,7 +323,7 @@
                       </div></a></li>
                   <li class="products__item"><a href="#" class="products__item-inner">
                       <div class="products__title">
-                        <div class="products__title-pic"><img src="img/test.png1"></div>
+                        <div class="products__title-pic"><img src="//lorempixel.com/82/90/technics/1"></div>
                         <div class="products__title-text--wrap">
                           <div class="product__title-text">iMac 27 5K</div>
                         </div>
@@ -351,7 +354,7 @@
                       </div></a></li>
                   <li class="products__item"><a href="#" class="products__item-inner">
                       <div class="products__title">
-                        <div class="products__title-pic"><img src="img/test.png2"></div>
+                        <div class="products__title-pic"><img src="//lorempixel.com/82/90/technics/2"></div>
                         <div class="products__title-text--wrap">
                           <div class="product__title-text">iPhone 6 </div>
                         </div>
@@ -389,7 +392,7 @@
     </div>
     <footer role="contentinfo" class="footer">
       <div class="container">
-        <div class="footer__logo"><img src="/img/logo/footer_logo.png" class="footer__logo-img">
+        <div class="footer__logo"><img src="img/logo/footer_logo.png" class="footer__logo-img">
           <div class="footer__logo-text">ЭпплShop</div>
         </div>
         <div class="footer__options">
@@ -425,8 +428,8 @@
         </div>
         <div class="footer__socials">
           <ul class="footer__socials-list">
-            <li class="footer__socials-item"><a href="#" class="footer__socials-link"><img src="/img/icons/appstore.png" class="footer__socials-img"></a></li>
-            <li class="footer__socials-item"><a href="#" class="footer__socials-link"><img src="/img/icons/googleplay.png" class="footer__socials-img"></a></li>
+            <li class="footer__socials-item"><a href="#" class="footer__socials-link"><img src="img/icons/appstore.png" class="footer__socials-img"></a></li>
+            <li class="footer__socials-item"><a href="#" class="footer__socials-link"><img src="img/icons/googleplay.png" class="footer__socials-img"></a></li>
           </ul>
           <ul class="footer__socials-icons">
             <li class="footer__socials-icon footer__socials-icon_vk"><a href="#" class="footer__socials-network"></a></li>
@@ -436,14 +439,11 @@
         </div>
       </div>
     </footer>
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <!--script(src="//code.jquery.com/jquery-1.11.2.min.js")-->
-    <!--script window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js">')-->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js">')</script>
     <!--build:js js/core.js-->
-    <!--bower:js-->
     <script src="_bower/bxslider/jquery.bxSlider.min.js"></script>
     <script src="js/main.js"></script>
-    <!--endbower-->
     <!--endbuild-->
   </body>
 </html>

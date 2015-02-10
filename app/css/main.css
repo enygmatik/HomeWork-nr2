@@ -76,19 +76,38 @@ html, body {
   width: 100% !important;
   display: block; }
 
+.bx-next, .bx-prev {
+  width: 71px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: none; }
+
+.bx-next {
+  background: url("../img/icons/slider_ctrl.png") right 0; }
+  .bx-next:hover {
+    background-position: right 34px; }
+
+.bx-prev {
+  background: url("../img/icons/slider_ctrl.png") left 0; }
+  .bx-prev:hover {
+    background-position: left 34px; }
+
 .slider__list {
   list-style: none; }
 
 .slider__item {
+  width: 740px;
   position: relative; }
 
 .slider__description {
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 75px;
-  background: url("../img/slide_desc_back.png"); }
+  background: url("../img/bg/slide_desc_back.png"); }
 
 .slider__description-inner {
   padding: 14px 24px; }
@@ -146,7 +165,7 @@ html, body {
 
 .products__list {
   list-style: none;
-  margin-left: -35px; }
+  margin-left: -40px; }
   .products__list:before, .products__list:after {
     content: " ";
     display: table; }
@@ -262,7 +281,7 @@ html, body {
   font-family: "elektra_light_probold";
   padding-top: 14px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #5c7b98; }
 
 .contactForm__row {
@@ -356,14 +375,14 @@ html, body {
   font-family: "elektra_light_proregular"; }
 
 .contacts__address {
-  background: url("../img/map_point.png") 0 0 no-repeat;
+  background: url("../img/icons/map_point.png") 0 0 no-repeat;
   padding-left: 20px;
   margin-bottom: 10px; }
 
 .contacts__phone {
   display: block;
   padding-top: 3px;
-  background: url("../img/phone.png") 0 0 no-repeat;
+  background: url("../img/icons/phone.png") 0 0 no-repeat;
   padding-left: 25px;
   height: 25px;
   text-decoration: none; }
@@ -375,7 +394,8 @@ html, body {
   clear: both; }
 
 .footer {
-  background: url("../img/bg/footer-bg.png") 0 0 repeat #613993; }
+  background: url("../img/bg/footer-bg.png") 0 0 repeat #613993;
+  padding-bottom: 30px; }
 
 .footer .container {
   padding-top: 60px;
@@ -501,5 +521,36 @@ html, body {
 .footer__socials-list {
   list-style: none;
   margin-bottom: 18px; }
+
+.has-succes {
+  border: 1px solid green;
+  background-color: rgba(32, 180, 72, 0.51);
+  color: #f3f3f3; }
+  .has-succes::-webkit-input-placeholder {
+    color: #f3f3f3; }
+
+.has-error {
+  border: 1px solid #ff0000;
+  background-color: rgba(255, 73, 67, 0.51);
+  color: #f3f3f3; }
+  .has-error::-webkit-input-placeholder {
+    color: #f3f3f3; }
+
+.contactForm___response {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+.error_message, .succes_message {
+  padding: 3px;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s; }
+
+.succes_message {
+  background-color: rgba(32, 180, 72, 0.26); }
+
+.error_message {
+  background-color: rgba(255, 73, 67, 0.26); }
 
 /*# sourceMappingURL=main.css.map */

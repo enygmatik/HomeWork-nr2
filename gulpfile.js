@@ -25,7 +25,13 @@ gulp.task('html', function () {
  
  // css livereload
 gulp.task('css', function () {
-  gulp.src('./app/css/*.css')
+  gulp.src('app/css/*.css')
+    .pipe(connect.reload());
+});
+
+// js livereload
+gulp.task('js', function () {
+  gulp.src('app/js/*.js')
     .pipe(connect.reload());
 });
 
@@ -43,7 +49,8 @@ gulp.task('css', function () {
 // watch 
 gulp.task('watch', function () {
   gulp.watch(['app/*.html'], ['html']);
-  gulp.watch(['./app/css/*.css'], ['css']);
+  gulp.watch(['app/css/*.css'], ['css']);
+  gulp.watch(['app/js/*.js'], ['js']);
 });
 
 // Building project [Distribution]
