@@ -1,20 +1,26 @@
-/* FONTS */
+/* --------- fonts --------- */
 @font-face {
-  font-family: 'elektra_medium_proregular';
-  src: url("../fonts/elektra_medium_pro-webfont.eot");
-  src: url("../fonts/elektra_medium_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_medium_pro-webfont.woff2") format("woff2"), url("../fonts/elektra_medium_pro-webfont.woff") format("woff"), url("../fonts/elektra_medium_pro-webfont.ttf") format("truetype"), url("../fonts/elektra_medium_pro-webfont.svg#elektra_medium_proregular") format("svg");
+  font-family: 'elektra_light_probold';
+  src: url("../fonts/font-webfont.eot");
+  src: url("../fonts/font-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/font-webfont.woff2") format("woff2"), url("../fonts/font-webfont.woff") format("woff"), url("../fonts/font-webfont.ttf") format("truetype"), url("../fonts/font-webfont.svg#elektra_light_probold") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'elektra_light_probold';
-  src: url("../fonts/elektra_bold_pro-webfont.eot");
-  src: url("../fonts/elektra_bold_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_bold_pro-webfont.woff2") format("woff2"), url("../fonts/elektra_bold_pro-webfont.woff") format("woff"), url("../fonts/elektra_bold_pro-webfont.ttf") format("truetype"), url("../fonts/elektra_bold_pro-webfont.svg#elektra_light_probold") format("svg");
+  font-family: 'elektra_medium_proitalic';
+  src: url("../fonts/elektra_medium_pro_italic-webfont.eot");
+  src: url("../fonts/elektra_medium_pro_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_medium_pro_italic-webfont.woff2") format("woff2"), url("../fonts/elektra_medium_pro_italic-webfont.woff") format("woff"), url("../fonts/elektra_medium_pro_italic-webfont.ttf") format("truetype"), url("../fonts/elektra_medium_pro_italic-webfont.svg#elektra_medium_proitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'elektra_light_proregular';
   src: url("../fonts/elektra_light_pro-webfont.eot");
   src: url("../fonts/elektra_light_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_light_pro-webfont.woff2") format("woff2"), url("../fonts/elektra_light_pro-webfont.woff") format("woff"), url("../fonts/elektra_light_pro-webfont.ttf") format("truetype"), url("../fonts/elektra_light_pro-webfont.svg#elektra_light_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'elektra_medium_proregular';
+  src: url("../fonts/elektra_medium_pro-webfont.eot");
+  src: url("../fonts/elektra_medium_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_medium_pro-webfont.woff2") format("woff2"), url("../fonts/elektra_medium_pro-webfont.woff") format("woff"), url("../fonts/elektra_medium_pro-webfont.ttf") format("truetype"), url("../fonts/elektra_medium_pro-webfont.svg#elektra_medium_proregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -69,11 +75,7 @@ html, body {
 .slider {
   position: relative;
   margin-bottom: 40px;
-  width: 100%;
-  display: inline-block; }
-
-.bx-wrapper, .bx-window {
-  width: 100% !important;
+  min-width: 740px;
   display: block; }
 
 .bx-next, .bx-prev {
@@ -94,14 +96,22 @@ html, body {
     background-position: left 34px; }
 
 .slider__list {
+  width: 740px;
   list-style: none; }
+  .slider__list:before, .slider__list:after {
+    content: " ";
+    display: table; }
+  .slider__list:after {
+    clear: both; }
 
 .slider__item {
   width: 740px;
   position: relative; }
 
+.slider__img {
+  width: 740px; }
+
 .slider__description {
-  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -259,6 +269,18 @@ html, body {
 .products__option-value {
   padding-left: 10px; }
 
+.scrollTop {
+  z-index: 999;
+  position: fixed;
+  width: 77px;
+  height: 39px;
+  line-height: 39px;
+  background: url("../img/icons/to-top.png");
+  right: 10px;
+  bottom: 10px;
+  outline: none;
+  color: #ffffff; }
+
 .page__sideBar {
   display: inline-block;
   float: left;
@@ -295,6 +317,9 @@ html, body {
   .contactForm__row:after {
     clear: both; }
 
+.contactForm__row-wrap {
+  padding-bottom: -5px; }
+
 .contactForm__row-title {
   font-size: 14px;
   height: 25px;
@@ -308,10 +333,22 @@ html, body {
   max-width: 133px;
   min-height: 25px;
   float: right;
-  font-size: 12px;
+  font-size: 15px;
   font-family: "elektra_light_proregular";
   padding-left: 10px;
   border: 1px solid #dae1eb; }
+  .contactForm__row-input::-webkit-input-placeholder {
+    font-size: 12px;
+    padding: 2px; }
+  .contactForm__row-input::-moz-placeholder {
+    font-size: 12px;
+    padding: 2px; }
+  .contactForm__row-input:-moz-placeholder {
+    font-size: 12px;
+    padding: 2px; }
+  .contactForm__row-input:-ms-input-placeholder {
+    font-size: 12px;
+    padding: 2px; }
 
 .contactForm__textarea {
   min-height: 70px;
@@ -395,7 +432,8 @@ html, body {
 
 .footer {
   background: url("../img/bg/footer-bg.png") 0 0 repeat #613993;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  min-width: 1000px; }
 
 .footer .container {
   padding-top: 60px;
@@ -456,6 +494,8 @@ html, body {
   text-decoration: none; }
 
 .footer__socials-list {
+  position: relative;
+  z-index: 99;
   list-style: none;
   padding: 0; }
   .footer__socials-list:before, .footer__socials-list:after {
@@ -468,10 +508,10 @@ html, body {
   float: left; }
 
 .footer__socials {
-  float: right;
-  right: 150px;
+  float: left;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  margin-left: 100px; }
 
 .footer__socials-icons {
   padding: 0;

@@ -4,19 +4,19 @@ aside.page__sideBar
         p.logo__text Apple Shop
     .contactForm
         .contactForm__container
-            .contactForm__title Call Back
+            .contactForm__title Заказать звонок
             .contactForm__form
                 form(name='name' action='' method='POST')
                     .contactForm___response
 
                     label.contactForm__row
-                        .contactForm__row-title Name
-                        input(type='text' name='name' placeholder='name').contactForm__row-input
+                        .contactForm__row-title Ваше имя
+                        input(type='text' name='name' placeholder='Иван').contactForm__row-input
                     label.contactForm__row
-                        .contactForm__row-title Phone
-                        input(type='text' name='phone' placeholder='+373 798 680 07').contactForm__row-input
+                        .contactForm__row-title Телефон
+                        input(type='text' name='phone' placeholder='+373 798 680 07').contactForm__row-input#tel
                     div.contactForm__row
-                        span.contactForm__row-title Date of Call
+                        span.contactForm__row-title Дата звонка
                         span.contactForm__row-wrap
                             select(name='hour').contactForm__row-select
                                 - for (var i = 1; i<= 24; i++)
@@ -24,10 +24,10 @@ aside.page__sideBar
                             select(name='minute').contactForm__row-select
                                 - for (var i = 1; i <= 60; i++)
                                     option(value=i)= i
-                    textarea(placeholder='your message' name='message').contactForm__textarea
+                    textarea(placeholder='Комментарий' name='message').contactForm__textarea
                     .contactForm__button
-                        button(type='submit' name='send').contactForm__button-submit Send
-                        button(type='reset' name='reset').contactForm__button-reset Clear
+                        button(type='submit' name='send').contactForm__button-submit Отправить
+                        button(type='reset' name='reset').contactForm__button-reset Очистить
     .pictures
         ul.pictures__list
             - for (var i = 0; i < 9; i++)

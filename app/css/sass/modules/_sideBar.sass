@@ -30,6 +30,9 @@
   text-align: center
   margin-bottom: 15px
 
+.contactForm__row-wrap
+  padding-bottom: -5px
+
 .contactForm__row-title
   font-size: 14px
   height: 25px
@@ -39,14 +42,30 @@
   display: inline-block
   color: $dark-blue
 
+
+
+
 .contactForm__row-input
   max-width: 133px
   min-height: 25px
   float: right
-  font-size: 12px
+  font-size: 15px
   font-family: $elektra_light_regular
   padding-left: 10px
   border: 1px solid $gray
+  &::-webkit-input-placeholder
+    font-size: 12px
+    padding: 2px
+  &::-moz-placeholder
+    font-size: 12px
+    padding: 2px
+  &:-moz-placeholder
+    font-size: 12px
+    padding: 2px
+  &:-ms-input-placeholder
+    font-size: 12px
+    padding: 2px
+
 
 .contactForm__textarea
   min-height: 70px
@@ -90,7 +109,6 @@
   margin-left: -10px
   padding: 0
 
-// TODO: de aranjat 3x3 grid pictures
 .pictures__item
   float: left
   margin-left: 10px

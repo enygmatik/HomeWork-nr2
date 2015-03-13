@@ -1,12 +1,13 @@
 //GENERAL PROJECT STYLES
 @import "../mixins/_mixins.sass"
-@import "../mixins/fonts"
+@import "../../../fonts/fonts"
 
 *
   font-family: $elektra_light_regular
   font-size: 100%
   box-sizing: border-box
   border: 0
+
 
 html, body
   min-height: 100%
@@ -53,11 +54,7 @@ html, body
 .slider
   position: relative
   margin-bottom: 40px
-  width: 100%
-  display: inline-block
-
-.bx-wrapper, .bx-window
-  width: 100% !important
+  min-width: 740px
   display: block
 
 .bx-next, .bx-prev
@@ -77,14 +74,18 @@ html, body
     background-position: left 34px
 
 .slider__list
+  @include clearfix
+  width: 740px
   list-style: none
 
 .slider__item
   width: 740px
   position: relative
 
+.slider__img
+  width: 740px
+
 .slider__description
-  width: 100%
   position: absolute
   bottom: 0
   left: 0
@@ -236,3 +237,15 @@ html, body
 
 .products__option-value
   padding-left: 10px
+
+.scrollTop
+  z-index: 999
+  position: fixed
+  width: 77px
+  height: 39px
+  line-height: 39px
+  background: url("../img/icons/to-top.png")
+  right: 10px
+  bottom: 10px
+  outline: none
+  color: #ffffff  

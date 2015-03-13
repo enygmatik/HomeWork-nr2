@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>LoftShop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta(name="viewport" content="width=device-width, initial-scale=1")-->
     <meta name="description" content="">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
     <link rel="stylesheet" href="css/core.css">
@@ -20,25 +20,26 @@
     <![endif]-->
     <div class="wrapper">
       <div class="mainContent">
+        <button type="button" name="scrollTop" class="scrollTop">наверх</button>
         <div class="page">
           <div class="container">
             <aside class="page__sideBar"><a href="#" class="logo"><img src="img/logo/logo.png" alt="" class="logo__img">
                 <p class="logo__text">Apple Shop</p></a>
               <div class="contactForm">
                 <div class="contactForm__container">
-                  <div class="contactForm__title">Call Back</div>
+                  <div class="contactForm__title">Заказать звонок</div>
                   <div class="contactForm__form">
                     <form name="name" action="" method="POST">
                       <div class="contactForm___response"></div>
                       <label class="contactForm__row">
-                        <div class="contactForm__row-title">Name</div>
-                        <input type="text" name="name" placeholder="name" class="contactForm__row-input">
+                        <div class="contactForm__row-title">Ваше имя</div>
+                        <input type="text" name="name" placeholder="Иван" class="contactForm__row-input">
                       </label>
                       <label class="contactForm__row">
-                        <div class="contactForm__row-title">Phone</div>
-                        <input type="text" name="phone" placeholder="+373 798 680 07" class="contactForm__row-input">
+                        <div class="contactForm__row-title">Телефон</div>
+                        <input type="text" name="phone" placeholder="+373 798 680 07" id="tel" class="contactForm__row-input">
                       </label>
-                      <div class="contactForm__row"><span class="contactForm__row-title">Date of Call</span><span class="contactForm__row-wrap">
+                      <div class="contactForm__row"><span class="contactForm__row-title">Дата звонка</span><span class="contactForm__row-wrap">
                           <select name="hour" class="contactForm__row-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -127,10 +128,10 @@
                             <option value="59">59</option>
                             <option value="60">60</option>
                           </select></span></div>
-                      <textarea placeholder="your message" name="message" class="contactForm__textarea"></textarea>
+                      <textarea placeholder="Комментарий" name="message" class="contactForm__textarea"></textarea>
                       <div class="contactForm__button">
-                        <button type="submit" name="send" class="contactForm__button-submit">Send</button>
-                        <button type="reset" name="reset" class="contactForm__button-reset">Clear</button>
+                        <button type="submit" name="send" class="contactForm__button-submit">Отправить</button>
+                        <button type="reset" name="reset" class="contactForm__button-reset">Очистить</button>
                       </div>
                     </form>
                   </div>
@@ -156,29 +157,32 @@
             <div class="page__content">
               <div class="slider">
                 <ul class="slider__list">
-                  <li class="slider__item"><img src="//lorempixel.com/740/340/technics/0" class="slider__img">
-                    <div class="slider__description">
-                      <div class="slider__description-inner">
-                        <div class="slider__description-title"><a href="#">iMac за полцены</a></div>
-                        <div class="slider__description-text">Принеси свой старый Mac и получи скидку на новый!</div>
-                      </div>
-                    </div>
+                  <li class="slider__item"><img src="http://lorempixel.com/720/320/technics/0" class="slider__img">
+                    <!--.slider__description
+                    .slider__description-inner
+                        .slider__description-title
+                            a(href="#") iMac за полцены
+                        .slider__description-text Принеси свой старый Mac и получи скидку на новый!
+                    
+                    -->
                   </li>
-                  <li class="slider__item"><img src="//lorempixel.com/740/340/technics/1" class="slider__img">
-                    <div class="slider__description">
-                      <div class="slider__description-inner">
-                        <div class="slider__description-title"><a href="#">iMac за полцены</a></div>
-                        <div class="slider__description-text">Принеси свой старый Mac и получи скидку на новый!</div>
-                      </div>
-                    </div>
+                  <li class="slider__item"><img src="http://lorempixel.com/720/320/technics/1" class="slider__img">
+                    <!--.slider__description
+                    .slider__description-inner
+                        .slider__description-title
+                            a(href="#") iMac за полцены
+                        .slider__description-text Принеси свой старый Mac и получи скидку на новый!
+                    
+                    -->
                   </li>
-                  <li class="slider__item"><img src="//lorempixel.com/740/340/technics/2" class="slider__img">
-                    <div class="slider__description">
-                      <div class="slider__description-inner">
-                        <div class="slider__description-title"><a href="#">iMac за полцены</a></div>
-                        <div class="slider__description-text">Принеси свой старый Mac и получи скидку на новый!</div>
-                      </div>
-                    </div>
+                  <li class="slider__item"><img src="http://lorempixel.com/720/320/technics/2" class="slider__img">
+                    <!--.slider__description
+                    .slider__description-inner
+                        .slider__description-title
+                            a(href="#") iMac за полцены
+                        .slider__description-text Принеси свой старый Mac и получи скидку на новый!
+                    
+                    -->
                   </li>
                 </ul>
               </div>
@@ -436,7 +440,7 @@
         </div>
       </div>
     </footer>
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js">')</script>
     <script src="js/core.js"></script>
   </body>

@@ -7,6 +7,8 @@
 .footer
   background: url("../img/bg/footer-bg.png") 0 0 repeat #613993
   padding-bottom: 30px
+  min-width: 1000px
+
 
 .footer .container
   padding-top: 60px
@@ -65,6 +67,8 @@
   text-decoration: none
 
 .footer__socials-list
+  position: relative
+  z-index: 99
   list-style: none
   padding: 0
   @include clearfix
@@ -73,10 +77,10 @@
   float: left
 
 .footer__socials
-  float: right
-  right: 150px
+  float: left
   position: relative
   text-align: center
+  margin-left: 100px
 
 .footer__socials-icons
   @include clearfix

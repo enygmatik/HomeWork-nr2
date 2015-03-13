@@ -2,7 +2,7 @@
     var app = {
         //APLICATION START
         initialize: function () {
-            console.log('APP Init');
+            //console.log('APP Init');
 
             this.bxSlider();
             this.setUpListener();
@@ -13,18 +13,22 @@
 
         //LOAD SLIDER
         bxSlider: function () {
-            console.log("Slider loaded");
+            //console.log("Slider loaded");
             var sliderList = $('.slider__list');
             if(sliderList.length){
-                sliderList.bxSlider();
+                sliderList.bxSlider({
+                    pager: false
+                });
             }
         },
 
         //EVENT KEEPER
         setUpListener: function() {
-            $('form').on('keydown', '.has-error', app.removeError);
-            $('form').on('submit', app.contactMe);
+            var form = $('form');
+            form.on('keydown', '.has-error', app.removeError);
+            form.on('submit', app.contactMe);
             $('.contactForm__button-reset').on('click', app.clearForm);
+            $('.scrollTop').on('click', app.scrollTop);
         },
 
         //SEND DATA FROM CONTACT FORM
@@ -49,24 +53,24 @@
 
     //VALIDATE FORM ON CLIENT SIDE
         validateForm: function () {
-            console.log('Check form');
+            //console.log('Check form');
             var elements = $('form').find('input, textarea'),
                 valid = true;
 
             $.each(elements, function(index, val) {
                 var element = $(val),
                     val = element.val();
+
                 if(val.length === 0){
                     element.addClass('has-error');
                     valid = false;
                 }
             }); //eachEND
-            return valid; //Each RESULT
         },
 
         //CLEAR FORM
         clearForm: function() {
-            console.log('Clear form');
+            //console.log('Clear form');
             var form = $('form');
             form.find('.has-error').removeClass('has-error');
             form.find('input, textarea').val('');
@@ -75,6 +79,11 @@
         //REMOVE ERROR INPUT STYLE ON TYPE
         removeError: function() {
             $(this).removeClass('has-error');
+        },
+
+        scrollTop: function() {
+            $('body, html').animate({scrollTop:0}, 450); //time of scroll
+            return false; //stop script (daca nu se anuta animatia e rupta)
         }
     };
 
